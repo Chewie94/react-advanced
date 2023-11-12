@@ -1,11 +1,25 @@
 {
     "compilerOptions": {
-        "outDir": "./dist/",
-        "noImplicitAny": true,
-        "module": "es6",
-        "target": "es5",
-        "jsx": "react",
-        "allowJs": true,
-        "moduleResolution": "node"
+      "outDir": "./dist/",
+      // highlight if type not provided
+      "noImplicitAny": true,
+      "module": "es6",
+      // specification - support most browsers
+      "target": "es5",
+      "jsx": "react",
+      "allowJs": true,
+      "moduleResolution": "node",
+      // allows working with packages which are using common js via "import"
+      "esModuleInterop": true,
+      // let loaders automatically create default imports
+      // instead of: import * as React from 'react'
+      // can write: import React from 'react'
+      "allowSyntheticDefaultImports": true
     },
-}
+    "ts-node": {
+      "compilerOptions": {
+        "module": "CommonJS"
+      }
+    }
+  }
+  
