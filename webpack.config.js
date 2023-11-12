@@ -4,7 +4,7 @@ const webpack = require('webpack');
 
 module.exports = {
     mode: "development",
-    entry: path.resolve(__dirname, 'src', 'index.js'),
+    entry: path.resolve(__dirname, 'src', 'index.ts'),
     output: {
         filename: "[name].[contenthash].js",
         path: path.resolve(__dirname, 'build'),
@@ -16,5 +16,19 @@ module.exports = {
             template: path.resolve(__dirname, 'public', 'index.html')
         }),
         new webpack.ProgressPlugin(),
-    ]
+    ],
+    module: {
+        // Specify the loaders and options for processing different types of files
+        rules: [
+          {
+            test: /\.tsx?$/,
+            use: 'ts-loader',
+            exclude: /node_modules/,
+          },
+        ],
+      },
+      // No need to specify extensions for next imports:
+      resolve: {
+        extensions: ['.tsx', '.ts', '.js'],
+      },
 }
