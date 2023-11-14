@@ -9,6 +9,8 @@
       "jsx": "react",
       "allowJs": true,
       "moduleResolution": "node",
+      // for absolute imports
+      "baseUrl": ".",
       // allows working with packages which are using common js via "import"
       "esModuleInterop": true,
       // let loaders automatically create default imports
