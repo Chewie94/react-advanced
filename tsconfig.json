@@ -6,7 +6,7 @@
       "module": "es6",
       // specification - support most browsers
       "target": "es5",
-      "jsx": "react",
+      "jsx": "react-jsx",
       "allowJs": true,
       "moduleResolution": "node",
       // for absolute imports
