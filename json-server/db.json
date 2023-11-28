@@ -26,11 +26,11 @@
     }
   ],
   "profile": {
-    "first": "Joe",
+    "first": "Joe12",
     "lastname": "Dohn",
-    "age": 22,
-    "currency": "PLN",
-    "country": "Poland",
+    "age": 23,
+    "currency": "EUR",
+    "country": "Ukraine",
     "city": "Warsaw",
     "username": "admin",
     "avatar": "https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?w=826&t=st=1701111716~exp=1701112316~hmac=596fb3a4f4d1ea9a87ee0c318b63e00f6d328235cc2a61c6c6fe4a7eac57495a"
