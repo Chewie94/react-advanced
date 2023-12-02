@@ -3,6 +3,6 @@ import { AddCommentFormProps } from './AddCommentForm';
 
 export const AddCommentFormAsync = lazy<FC<AddCommentFormProps>>(() => new Promise((resolve) => {
     // @ts-ignore
-    // fake lazy loading
+    // fake page lazy load
     setTimeout(() => resolve(import('./AddCommentForm')), 1500);
 }));
