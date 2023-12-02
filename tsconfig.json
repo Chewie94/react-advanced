@@ -3,7 +3,7 @@
       "outDir": "./dist/",
       // highlight if type not provided
       "noImplicitAny": true,
-      "module": "es6",
+      "module": "ESNext",
       // specification - support most browsers
       "target": "es5",
       "jsx": "react-jsx",
