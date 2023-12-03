@@ -20,7 +20,8 @@
       // let loaders automatically create default imports
       // instead of: import * as React from 'react'
       // can write: import React from 'react'
-      "allowSyntheticDefaultImports": true
+      "allowSyntheticDefaultImports": true,
+      "isolatedModules": true
     },
     "ts-node": {
       "compilerOptions": {
